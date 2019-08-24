@@ -37,6 +37,26 @@ cd to the project directory and enter the below command to start the project
 
 Tests will be added later
 
+
+## Building a docker image
+
+Run the below command to create a docker iamge
+
+```
+./mvnw install dockerfile:build
+```
+
+This will create a docker image with name
+
+```
+rakeshv/spring-webflux
+```
+
+Run the docker image using the command
+
+```bash
+docker run -p 8080:8080 -t rakeshv/spring-webflux
+```
 ## Built With
 
 * [Spring Boot](https://spring.io/projects/spring-boot) - The web framework used
